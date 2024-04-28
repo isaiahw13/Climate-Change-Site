@@ -7,7 +7,7 @@ This is a web application developed for the first annual Chabot Hacks hackathon 
 ## Features 🔍
 
 - **Carbon Footprint Tracker**: Users can enter various details about their lifestyle and habits to recieve their estimated carbon footprint. Powered by https://www.carbonfootprint.com/
-- **Climate Change Magazine**: A digital magazine that provides information about climate change.
+- **Climate Change Magazine**: A digital magazine created by us that provides information about climate change.
 
 ## Live Site 🌎
 
