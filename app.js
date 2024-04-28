@@ -69,6 +69,11 @@ app.post("/addUser", (req, res) => {
     });
 });
 
+//route to magazine pdf
+app.get("/magazine", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "magazine.html"));
+});
+
 //start server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
