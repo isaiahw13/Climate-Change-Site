@@ -10,10 +10,6 @@ const userSchema = new Schema({
     type: Number,
     required: true,
   },
-  ip: {
-    type: String,
-    required: true,
-  },
 });
 
 const User = mongoose.model("User", userSchema);
