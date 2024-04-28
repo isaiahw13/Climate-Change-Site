@@ -1,13 +1,112 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width,
+     initial-scale=1.0"
+    />
+    <title>Climate Conscious Website</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <a href="/carbon-footprint">carbon footprint page</a>
-    <a href="/about">about page</a>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">
+          <i class="fas fa-gem"></i>Sustainable Future
+        </a>
+
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Our Magazine </a>
+          </li>
+          <li class="navbar__btn">
+            <a href="/" class="button">Connect with Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>One Earth, One Chance</h1>
+          <h2>Fighting Climate Crisis</h2>
+          <p>
+            The greatest threat to our planet is the belief that someone else
+            will save it. Communities hold immense power to transform our world
+            for the better amidst the climate crisis. By embracing unity and
+            innovation, they can create vibrant spaces that nurture both people
+            and the planet.
+          </p>
+          <button class="main__btn">
+            <a href="/">Carbon footprint calculator</a>
+          </button>
+        </div>
+        <div class="main__img--conatiner">
+          <img src="img/pic2.jpg" alt="pic" id="main__img" />
+        </div>
+
+        <!-- images 2 -->
+        <div class="second-part">
+          <div class="main__img--conatiner">
+            <img src="img/pic5.jpg" alt="pic" id="main__img" />
+          </div>
+          <div class="main__img--conatiner">
+            <img src="img/pic4.jpg" alt="pic" id="main__img" />
+          </div>
+          <div class="main__img--conatiner">
+            <img src="img/pic3.jpg" alt="pic" id="main__img" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+      <!-- <h1> See what the hype is about</h1>-->
+      <div class="services__container">
+        <div class="services__card">
+          <h2>Climate Crisis</h2>
+          <p>
+            The climate crisis is a pressing issue that requires immediate
+            action. By shifting to renewable energy, reducing emissions,
+            preserving ecosystems, and promoting sustainable practices, we can
+            improve lives and create a healthier planet for all. Collaboration
+            and innovation are key to tackling this challenge effectively and
+            ensuring a sustainable future.hnology
+          </p>
+        </div>
+        <div class="services__card">
+          <h2>Are you ready to take action?</h2>
+          <p>
+            Climate action is essential because it addresses the immediate need
+            to combat the climate crisis. By reducing emissions, transitioning
+            to renewable energy, protecting ecosystems, and promoting
+            sustainability, we can mitigate the impacts of climate change. This
+            not only safeguards vulnerable communities but also ensures a
+            healthier planet for future generations. Delaying action only
+            intensifies the challenges we face, making it imperative to act now.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const menu = document.querySelector("#mobile-menu");
+      const menuLinks = document.querySelector(".navbar__menu");
+
+      menu.addEventListener("click", function () {
+        menu.classList.toggle("is-active");
+        menuLinks.classList.toggle("active");
+      });
+    </script>
+    <!-- <script scr="file.js"></script> -->
   </body>
 </html>
