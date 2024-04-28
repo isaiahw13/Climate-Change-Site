@@ -20,6 +20,6 @@ You can access the live site at [www.climate-change.live](http://www.climate-cha
 
 ## Team Members 👥
 - [Isaiah White](https://www.linkedin.com/in/isaiah-white-b8315818b) - Back-End, Front-End
-- [Harsharandeep Dhillon](https://www.linkedin.com/in/harsharandeep-dhillon-26b291267/) - Front-End
+- [Harsharandeep Dhillon](https://www.linkedin.com/in/harsharandeep-dhillon-26b291267/) - Front-End, Magazine
 - [Zoheb Sharif](https://www.linkedin.com/in/zohebsharif/) - Front-End
 - [Mya Ramchandani](https://www.linkedin.com/in/mya-ramchandani-66b424306/) - Design
