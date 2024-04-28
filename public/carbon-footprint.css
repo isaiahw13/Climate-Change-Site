@@ -1,0 +1,70 @@
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+/* calculator */
+.calculator-container {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* leaderboard */
+.leaderboard-container {
+  width: 100%;
+  max-width: fit-content;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submission-box {
+  width: 100%;
+  max-width: fit-content;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.leaderboard-container h2 {
+  text-align: center;
+}
+
+.leaderboard-container p {
+  text-align: center;
+}
+
+.leaderboard-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 750px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.leaderboard-table thead tr {
+  background-color: #29940b;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 12px 15px;
+}
+
+.leaderboard-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.leaderboard-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.leaderboard-table tbody tr:last-of-type {
+  border-bottom: 2px solid #29940b;
+}

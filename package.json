@@ -10,8 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
     "expresss": "^0.0.0",
     "mongoose": "^8.3.2",
     "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "prettier-plugin-ejs": "^1.0.3"
   }
 }
