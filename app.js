@@ -48,14 +48,16 @@ app.get("/carbon-footprint", (req, res) => {
 
 // method to add new user
 app.post("/addUser", (req, res) => {
+  console.log(req.ip);
   const name = req.body.name;
   const footprint = req.body.footprint;
+  const ip = req.ip;
 
-  // Find a user with the same name(case insensitive) and update their footprint
-  // If no user with the same name exists, create a new user
+  // Find a user with the same ip and update their footprint
+  // If no user with the same ip exists, create a new user
   User.findOneAndUpdate(
-    { name: name },
-    { footprint: footprint },
+    { ip: ip },
+    { footprint: footprint, name: name },
     { new: true, upsert: true },
   )
     .then(() => {
@@ -71,4 +73,3 @@ app.post("/addUser", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-

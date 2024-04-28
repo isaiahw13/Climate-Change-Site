@@ -6,9 +6,32 @@
     <title>Your Carbon Footprint</title>
     <!-- <link rel="icon" type="image/x-icon" href="public/img/favicon.ico" /> -->
     <link rel="stylesheet" href="carbon-footprint.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">
+          <i class="fas fa-gem"></i>Sustainable Future
+        </a>
+
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Our Magazine </a>
+          </li>
+          <li class="navbar__btn">
+            <a href="/about" class="button">Connect with Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <!-- calculator -->
     <div class="calculator-container">
       <h1>Calculate Your Carbon Footprint</h1>
@@ -35,7 +58,7 @@
           <input
             type="number"
             name="footprint"
-            placeholder="Carbon Footprint"
+            placeholder="Metric Tons of CO₂e"
             required
           />
           <input type="submit" value="Submit" />
@@ -57,7 +80,9 @@
           <tr>
             <td><%= (i + 1) %></td>
             <td><%= users[i].name %></td>
-            <td><%= users[i].footprint.toLocaleString() + " CO₂e"%></td>
+            <td>
+              <%= users[i].footprint.toLocaleString() + " Metric Tons of CO₂e"%>
+            </td>
           </tr>
           <% } %>
           <% } %>
