@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="icon" href="/img/favicon.ico" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Carbon Footprint</title>
@@ -56,8 +57,9 @@
         <form action="/addUser" method="post">
           <input type="text" name="name" placeholder="Your Name" required />
           <input
-            type="number"
+            type="float"
             name="footprint"
+            min="0.0001"
             placeholder="Metric Tons of CO₂e"
             required
           />
