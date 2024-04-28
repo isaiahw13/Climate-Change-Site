@@ -15,7 +15,7 @@ You can access the live site at [www.climate-change.live](http://www.climate-cha
 
 ## Technologies 🔧
 - **Front-End:** HTML, CSS, Javascript
-- **Back-End:** Node.js, EJS, Express.js, MongoDB Atlas Cloud
+- **Back-End:** Node.js, EJS, Express.js, Mongoose, MongoDB Atlas Cloud
 - **Hosting:** Heroku
 
 ## Team Members 👥
